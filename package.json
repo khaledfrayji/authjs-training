@@ -1,0 +1,31 @@
+{
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test:finance": "tsc --module commonjs --target ES2022 --outDir .test-build --rootDir . --strict --esModuleInterop --skipLibCheck src/types/banking.ts src/data/mock-accounts.ts src/data/mock-transactions.ts src/lib/dates.ts src/lib/formatting.ts src/lib/finance.ts src/lib/csv.ts src/lib/finance.test.ts && node --test .test-build/src/lib/finance.test.js && node -e \"require('node:fs').rmSync('.test-build',{recursive:true,force:true})\""
+  },
+  "dependencies": {
+    "mongoose": "^9.12.0",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

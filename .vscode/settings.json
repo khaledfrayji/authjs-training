@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "**/.next": true,
+        "**/node_modules": true,
+        "**/next-env.d.ts": true,
+        "**/prettier*": true,
+       
+       
+        "**/postcss*": true,
+        "**/README*": true,
+        "**/.gitignore": false,
+        "**/next.config*": true,
+    
+        "**/.next*": true,
+    
+           "**/ts*":true,
+            "**/es*":true,
+        "**/hooks*": true,
+        "**/styles*": true,
+        "**/utils*": true
+    }  ,
+      
+   "eslint.enable": true
+}
