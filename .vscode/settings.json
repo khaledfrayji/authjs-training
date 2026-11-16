@@ -14,6 +14,7 @@
         "**/.next*": true,
     
            "**/ts*":true,
+            "**/package*":true,
             "**/es*":true,
         "**/hooks*": true,
         "**/styles*": true,

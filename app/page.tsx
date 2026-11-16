@@ -3,7 +3,7 @@
 
 const page = () => {
   return (
-    <div>Hello world</div>
+    <div>Hello Auth</div>
   )
 }
 
